@@ -1,0 +1,9 @@
+// Mixins
+
+@mixin border($xoffset, $yoffset, $border-color){
+    box-shadow: $xoffset $yoffset 15px $secondary_color inset, 3px 3px 2px $border-color;
+    margin: 5px;
+	border:solid 2px $border-color;
+	padding: 20px;
+	background-color: $background_color;
+}

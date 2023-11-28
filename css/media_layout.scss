@@ -1,0 +1,27 @@
+/* Media layout */
+
+@media screen and (min-width: 1000px) {
+    html{ 
+		font-size:20px;
+	}
+}
+
+
+@media (min-width: 690px){
+    html { 
+		font-size:13px;
+	}
+    body {
+        grid-template-rows: 100px 1fr 100px;
+    }
+    .button {
+        border-left: 0;
+        border-top: 2px solid $primary_color;
+    }
+    header {
+        border-bottom: 0;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

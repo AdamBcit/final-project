@@ -5,37 +5,48 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
-        <title>Adam Van Woerden - Assignment08</title>
+        <title>Adam Van Woerden - Final Project - Hangman Game</title>
         <meta charset="utf-8">
 		
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
         
-        <script src="scripts/assignment08.js" defer></script>
+        <script src="scripts/words.js" defer></script>
+        <script src="scripts/final-project.js" defer></script>
         
 	</head>
 	<body>
         <header id="top">
             <img src="images/logo.png" alt="logo" width="100" height="100">
-            <h1>Adam Van Woerden - Assignment08</h1>
+            <h1>Adam Van Woerden - Final Project - Hangman Game</h1>
         </header>
 		<main class="border">
-            
-            <h2 class="center">Bike Product: LTD Race</h2>
-            <section id="popup">
+            <section id="popup" class="center">
                 <div>
-                    <h2>Hello, User</h2>
-                    <button id="close-button">&#10005;</button>
-                    <p>Instructions:</p><br>
-                    <p>To rotate the view of the bike click on the 'Start' animation button. Stop the animation by clicking the 'Stop' button. To reverse rotate the view of the bike click on the 'Reverse' animation button.</p>
+                    <img src="images/homer6.png" id="final-image" alt="Homer">
+                    <h1>Game Over!</h1>
+                    <h2 id="correct-word">The correct word was: <b>word here</b></h2>
+                    <button id="play-again">Play Again</button>
                 </div>
             </section>
-            <div id="bike-container" class="center">
+            <div id="Hangman" class="center">
                 <figure>
-                    <img src="images/product-images/bike-1.jpg" id="bike-image" alt="Bicycle">
+                    <img src="images/homer0.png" id="homer" alt="Homer">
                 </figure>
-                <button id="start-button">Start</button>&nbsp;
-                <button id="stop-button">Stop</button>&nbsp;
-                <button id="reverse-button">Reverse</button>
+                <ul id="word">
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter guessed">a</li>
+                    <li class="letter"></li>
+                </ul>
+                <h2 id="hint" class="center">
+                    Hint: 
+                    <b>this is for the hint</b>
+                </h2>
+                <h2 id="guesses" class="center">
+                    Incorrect guesses:
+                    <b>0 / 6</b>
+                </h2>
+                <div id="keyboard" class="center"></div>
             </div>
             
         </main>

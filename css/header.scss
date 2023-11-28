@@ -1,0 +1,18 @@
+/* Header */
+
+header {
+    @include border(0px, 0px, $primary_color);
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    grid-area: header;
+}
+
+header img {
+    height: 75px;
+    width: 75px;
+}
+

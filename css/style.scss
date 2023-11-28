@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// import variables
+@import "variables.scss";
+
+// import mixins  
+@import "mixins.scss";
+
+// import normalize
+@import "normalize.scss";
+
+// import content
+@import "header.scss";
+@import "page_content.scss";
+@import "footer.scss";
+
+// import wide screen media query styles
+@import "media_layout.scss";
+
